@@ -1,41 +1,48 @@
-# Prerequisites
-*.d
+# ###########################################################################
+# Visual Studio 专用屏蔽（你最需要的部分）
+# ###########################################################################
+.vs/
+*.sln
+*.suo
+*.user
+*.userosscache
+*.userprefs
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sdf
+*.opendb
+*.ipch
+*.db
+*.log
 
-# Compiled Object files
+# ###########################################################################
+# C/C++ 编译产物屏蔽
+# ###########################################################################
 *.slo
 *.lo
 *.o
 *.obj
-
-# Precompiled Headers
 *.gch
 *.pch
-
-# Linker files
 *.ilk
-
-# Debugger Files
 *.pdb
-
-# Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
 *.mod
 *.smod
-
-# Compiled Static libraries
 *.lai
 *.la
 *.a
 *.lib
-
-# Executables
 *.exe
 *.out
 *.app
-
-# debug information files
 *.dwo
+
+# ###########################################################################
+# 其他垃圾
+# ###########################################################################
+.DS_Store
+Thumbs.db
