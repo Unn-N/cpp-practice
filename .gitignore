@@ -1,12 +1,10 @@
-# Visual Studio
+# Visual Studio 核心忽略
 .vs/
 *.sln
 *.suo
 *.user
 *.userosscache
 *.userprefs
-*.vcxproj
-*.vcxproj.filters
 *.vcxproj.user
 *.sdf
 *.opendb
@@ -17,8 +15,24 @@
 *.lastbuildstate
 *.unsuccessfulbuild
 vc143.*
+*.tlog
+*.recipe
+*.iobj
+*.ipdb
+*.exp
+*.resources
+*.bsc
+BuildLog/
+x64/
+x86/
+Debug/
+Release/
+x64/Debug/
+x64/Release/
+x86/Debug/
+x86/Release/
 
-# C/C++ Build
+# C/C++ 编译产物
 *.slo
 *.lo
 *.o
@@ -41,6 +55,6 @@ vc143.*
 *.app
 *.dwo
 
-# Other
+# 系统垃圾
 .DS_Store
 Thumbs.db
