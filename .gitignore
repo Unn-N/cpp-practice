@@ -54,6 +54,8 @@ x86/Release/
 *.out
 *.app
 *.dwo
+*.vcxproj
+*.filters
 
 # 系统垃圾
 .DS_Store
