@@ -1,6 +1,6 @@
 #include<iostream>
 #include<string>
-#include <algorithm>
+#include<algorithm>
 
 using namespace std;
 
@@ -11,15 +11,11 @@ private:
 	int score;
 public:
 	Student() :id(0), name(""), score(0) {}
-	Student(int a, string b, int c) :id(a), name(b), score(c) {}
-	int getScore()const ;
-	int getId()const;
 
-	bool operator>(const Student&other)const;
+	bool operator>(const Student& other)const;
 
-	friend istream& operator>>(istream& in,Student& s);
-	friend ostream& operator<<(ostream& out,const Student& s);
-
+	friend istream& operator>>(istream& in, Student& s);
+	friend ostream& operator<<(ostream& out, const Student& s);
 };
 
 template<typename T>
@@ -41,16 +37,8 @@ public:
 	friend istream& operator>>(istream& in, Array<U>& a);
 
 	template<typename U>
-	friend ostream& operator << (ostream & out, const Array<U>&a);
+	friend ostream& operator << (ostream& out, const Array<U>& a);
 };
-
-int Student::getId()const {
-	return id;
-}
-
-int Student::getScore()const {
-	return score;
-}
 
 bool Student::operator>(const Student& other)const {
 	if (this->score > other.score) {
@@ -66,12 +54,10 @@ istream& operator>>(istream& in, Student& s) {
 	return in;
 }
 
-ostream& operator<<(ostream& out,const Student& s) {
+ostream& operator<<(ostream& out, const Student& s) {
 	out << s.id;
 	return out;
 }
-
-
 
 template<typename T>
 void Array<T>::sort() {
@@ -96,13 +82,10 @@ template<typename T>
 ostream
 & operator<<(ostream& out, const Array<T>& a) {
 	for (int i = 0; i < a.size; i++) {
-		out<< a.arr[i] << " ";
+		out << a.arr[i] << " ";
 	}
 	return out;
 }
-
-
-
 
 int main() {
 	int num;
@@ -110,7 +93,7 @@ int main() {
 	Array<int> array_int(num);
 	cin >> array_int;
 	array_int.sort();
-	
+
 	Array<double> array_double(num);
 	cin >> array_double;
 	array_double.sort();
@@ -118,7 +101,7 @@ int main() {
 	Array<string> array_string(num);
 	cin >> array_string;
 	array_string.sort();
-	
+
 	Array<Student> array_student(num);
 	cin >> array_student;
 	array_student.sort();
