@@ -60,3 +60,16 @@ x86/Release/
 # 系统垃圾
 .DS_Store
 Thumbs.db
+
+# Qt / CMake generated files and machine-specific settings
+build/
+build-*/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*_autogen/
+*.pro.user*
+CMakeLists.txt.user*
+.qtc_clangd/
+.cache/
