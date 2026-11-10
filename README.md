@@ -14,6 +14,7 @@
 | `data_structures/linked_lists/` | 链表、约瑟夫环、学生有序链表 |
 | `data_structures/stacks/` | 栈操作、后缀表达式 |
 | `data_structures/trees/` | 树高、遍历转换 |
+| `data_structures/heaps/` | 大小根堆判断与转换、水晶最小代价合并（手写小根堆） |
 | `algorithms/strings/` | KMP、路径简化、字符消除 |
 | `algorithms/sorting/` | 基数排序、桶方法求最大间距 |
 | `algorithms/search/` | 迷宫搜索、24 点搜索 |
